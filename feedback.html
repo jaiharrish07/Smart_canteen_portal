@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header><h1>Feedback</h1><p id="time"></p></header>
+
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="canteens.html">Canteens</a>
+  <a href="live-menu.html">Live Menu</a>
+  <a href="canteen-details.html">Details</a>
+  <a href="map.html">Campus Map</a>
+  <a href="feedback.html">Feedback</a>
+</nav>
+
+<section class="card">
+  <form onsubmit="return validateForm()">
+    <input type="text" id="rollno" placeholder="Your Register number">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="text" id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Your Suggestion"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

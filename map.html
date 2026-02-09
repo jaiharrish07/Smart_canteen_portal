@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VIT Chennai Campus Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="getLocation()">
+
+<header>
+  <h1>VIT Chennai – Canteen Map</h1>
+  <p id="time"></p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="canteens.html">Canteens</a>
+  <a href="live-menu.html">Live Menu</a>
+  <a href="canteen-details.html">Details</a>
+  <a href="map.html">Campus Map</a>
+  <a href="feedback.html">Feedback</a>
+</nav>
+
+<section class="map-container">
+  <div class="map">
+
+    <img src="images/map.jpg" class="campus-map">
+
+    <div class="canteen-label c1">🍽 Dominos</div>
+    <div class="canteen-label c2">🍛 Ab1 canteen first floor</div>
+    <div class="canteen-label c3">🍔 Block B Canteen</div>
+    <div class="canteen-label c4">🌙 Gazebo and lassi shop</div>
+    <div class="canteen-label c5">🥤 Juice Corner</div>
+
+
+    <div id="userLocation"></div>
+
+  </div>
+</section>
+
+<p id="locationStatus"></p>
+
+
+<script src="script.js"></script>
+</body>
+</html>

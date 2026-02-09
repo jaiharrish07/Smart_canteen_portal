@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef6ff;
+}
+
+nav {
+  background: black;
+  padding: 10px;
+  text-align: left;
+}
+
+nav a {
+  color:yellow;
+  margin: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #87cefa;
+}
+
+.page-title {
+    background: brown;
+
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container */
+.canteen-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Card */
+.canteen-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.canteen-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Header */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Status */
+.status {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.status.open {
+    color: green;
+}
+
+.status.closed {
+    color: #c0392b;
+}
+
+.status.late {
+    color: #ff7a00;
+}
+
+.status::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+/* Time */
+.time {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Badges */
+.badges {
+    margin: 10px 0;
+}
+
+.badge {
+    display: inline-block;
+    background: #e0ecff;
+    color: #004aad;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 3px;
+}
+
+/* Button */
+.details-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: #ffd600;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.details-btn:hover {
+    background: #ffcc00;
+}
